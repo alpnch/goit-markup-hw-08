@@ -1,0 +1,39 @@
+.peculiarities {
+  display: flex;
+}
+
+.peculiarities__item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.peculiarities__thumb {
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-background-light;
+}
+
+.peculiarities__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.peculiarities__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $color-black;
+  box-sizing: content-box;
+  margin-bottom: 10px;
+}
+
+.peculiarities__text {
+  line-height: 1.71;
+  max-width: 270px;
+  color: $color-gray;
+}
