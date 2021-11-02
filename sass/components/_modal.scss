@@ -5,7 +5,11 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   position: fixed;
+  overflow: scroll;
   transition: $trans-duration $timing-function;
+  @media screen and (max-width: 767px) {
+    padding: 93px 15px;
+  }
 }
 
 .is-hidden {
@@ -15,17 +19,11 @@
 }
 
 .modal {
-  position: absolute;
-  width: 450px;
-  background: $color-white;
   border-radius: 4px;
-  top: 50%;
-  left: 50%;
+  padding: 40px;
+  background: $color-white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform $trans-duration $timing-function;
-  padding: 40px;
 
   &-open {
     overflow: hidden;
@@ -35,8 +33,15 @@
     transform: translate(-50%, -50%) scale(1.5);
   }
 
+  @media screen and (max-width: 767px) {
+  }
+
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform $trans-duration $timing-function;
   }
 }
 
