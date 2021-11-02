@@ -16,7 +16,7 @@
 
 .modal {
   position: absolute;
-  width: 528px;
+  width: 450px;
   background: $color-white;
   border-radius: 4px;
   top: 50%;
@@ -34,6 +34,10 @@
   .is-hidden & {
     transform: translate(-50%, -50%) scale(1.5);
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .form {
@@ -47,12 +51,16 @@
 }
 
 .form__header {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
-  line-height: 23px;
-  text-align: center;
+  line-height: 1.5;
   color: $color-black;
   margin-bottom: 12px;
+
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 
 .form__label {
@@ -78,6 +86,13 @@
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+  transition: border $trans-duration $timing-function;
+
+  @media screen and (max-width: 767px) {
+    .form__label:focus-within & {
+      color: $color-blue;
+    }
+  }
 }
 
 .label__input {
@@ -132,20 +147,30 @@
 }
 
 .flag__text {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $color-gray;
   margin-left: 7px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .document__link {
   text-decoration: underline;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: $color-blue;
   margin-left: 4px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .flag__icon {
