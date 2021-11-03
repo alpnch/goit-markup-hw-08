@@ -1,6 +1,12 @@
-// .peculiarities {
-//   display: flex;
-// }
+.peculiarities {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+}
 
 .peculiarities__item {
   @media screen and (max-width: 767px) {
@@ -9,6 +15,13 @@
     }
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    width: calc((100% - 30px) / 2);
   }
   @media screen and (min-width: 1200px) {
     &:not(:last-child) {

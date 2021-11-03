@@ -45,7 +45,7 @@ footer {
     width: 480px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 768px;
   }
 
@@ -80,15 +80,15 @@ footer {
   margin-left: auto;
   margin-right: auto;
   background: $color-background-light;
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 480px;
-  }
+  // @media screen and (min-width: 480px) and (max-width: 767px) {
+  //   width: 480px;
+  // }
 
-  @media screen and (min-width: 768px) and (max-width: 1199) {
-    width: 768px;
-  }
+  // @media screen and (min-width: 768px) and (max-width: 1199) {
+  //   width: 768px;
+  // }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+  // @media screen and (min-width: 1200px) {
+  //   width: 1200px;
+  // }
 }
