@@ -74,7 +74,6 @@
 
 .form__label {
   display: block;
-  flex-wrap: wrap;
   width: 100%;
   position: relative;
   &:nth-child(-n + 4) {
@@ -161,7 +160,6 @@
   letter-spacing: 0.03em;
   color: $color-gray;
   margin-left: 7px;
-
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -175,7 +173,6 @@
   letter-spacing: 0.03em;
   color: $color-blue;
   margin-left: 4px;
-
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
