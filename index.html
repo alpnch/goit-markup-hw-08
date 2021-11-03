@@ -54,6 +54,52 @@
                         </svg>+38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="menu__button js-open-menu"  aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu__open" width="24" height="16">
+                    <use class="menu__icon" href="./images/icons.svg#icon-menu_open"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="menu js-menu-container" id="mobile-menu">
+            <button class="menu__button--close js-close-menu">
+                <svg class="menu__close" width="30" height="30">
+                    <use class="menu__close__icon" href="./images/icons.svg#icon-menu_close"></use>
+                </svg>
+            </button>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="./index.html">Студия</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Контакты</a>
+                </li>
+            </ul>
+            <ul class="menu__contacts">
+                <li class="menu__contacts__item">
+                    <a class="menu__contacts__phone" href="tel:++380961111111">+38 096 111 11 11</a>
+                </li>
+                <li class="menu__contacts__item">
+                    <a class="menu__contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="menu__socials">
+                <li class="menu__socials__item">
+                    <a class="menu__socials__link" href="#">Instagram</a>
+                </li>
+                <li class="menu__socials__item">
+                    <a class="menu__socials__link" href="#">Twitter</a>
+                </li>
+                <li class="menu__socials__item">
+                    <a class="menu__socials__link" href="#">Facebook</a>
+                </li>
+                <li class="menu__socials__item">
+                    <a class="menu__socials__link" href="#">LinkedIn</a>
+                </li>
+            </ul>
+
         </div>
     </header> 
     <main> 
@@ -481,6 +527,10 @@
             </div>
         </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
