@@ -71,12 +71,25 @@
 
 .buttons {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
 }
 
 .buttons__item {
   &:not(:last-child) {
-    margin-right: 10px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -106,22 +119,26 @@
 
 //menu-button
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu__button {
-    border: none;
-    display: flex;
-    align-items: center;
-    background-color: $color-white;
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    width: 40px;
-    height: 40px;
+    visibility: hidden;
   }
-  .menu__icon {
-    .menu__button:hover & {
-      fill: $color-blue;
-    }
+}
+
+.menu__button {
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: $color-white;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+}
+.menu__icon {
+  .menu__button:hover & {
+    fill: $color-blue;
   }
 }
 
