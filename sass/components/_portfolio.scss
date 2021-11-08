@@ -1,28 +1,56 @@
-// .portfolio {
-//   @media screen and (min-width: 1200px) {
-//     margin-top: 50px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-items: center;
-//     justify-content: space-between;
-//   }
-// }
+.portfolio {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}
 
 .portfolio__item {
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 30px;
     }
-    img {
-      width: 100%;
-      max-height: 294px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(9) {
+      margin-right: 0;
+    }
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
-  // @media screen and (min-width:1200px) {
-  //   &:nth-child(-n + 6) {
-  //     margin-bottom: 30px;
-  //   }
-  // }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(-n + 6) {
+      margin-bottom: 30px;
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:nth-child(3),
+    &:nth-child(6) {
+      margin-right: 0;
+    }
+    img {
+      width: 370px;
+      height: 294px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__thumb {
+    .portfolio__item:nth-child(1) & {
+      padding-bottom: 56px;
+    }
+  }
 }
 
 .portfolio__items__hover {
