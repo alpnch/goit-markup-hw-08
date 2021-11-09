@@ -2,51 +2,48 @@
   background-color: #c4c4c4;
   position: relative;
   background-image: $hero-gradient,
-    url(../images/background/background-mobile.jpg);
+    url(../../images/background/background-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   @media screen and (max-width: 767px) {
     padding: 118px 60px;
   }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding: 118px 204px;
   }
-
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     height: 600px;
     padding: 200px 0;
   }
 }
-
 .hero {
   @media (min-device-pixel-ratio: 2) and (max-width: 767px),
     (min-resolution: 192dpi) and (max-width: 767px),
     (min-resolution: 2dppx) and (max-width: 767px) {
     background-image: $hero-gradient,
-      url("../images/background/background-mobile@2x.png");
+      url("../../images/background/background-mobile@2x.png");
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 768px) {
     background-image: $hero-gradient,
-      url("../images/background/background-tablet.jpg");
+      url("../../images/background/background-tablet.jpg");
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: $hero-gradient,
-      url("../images/background/background-tablet@2x.jpg");
+      url("../../images/background/background-tablet@2x.jpg");
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 1200px) {
     background-image: $hero-gradient,
-      url("../images/background/background-desktop.jpg");
+      url("../../images/background/background-desktop.jpg");
   }
   @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
     (min-resolution: 192dpi) and (min-width: 1200px),
     (min-resolution: 2dppx) and (min-width: 1200px) {
     background-image: $hero-gradient,
-      url("../images/background/background-desktop@2x.jpg");
+      url("../../images/background/background-desktop@2x.jpg");
   }
 }
 
@@ -54,18 +51,14 @@
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
   @media screen and (min-width: 480px) and (max-width: 767px) {
   }
-
   @media screen and (min-width: 768px) and (max-width: 1199) {
   }
-
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
