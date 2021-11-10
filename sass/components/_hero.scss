@@ -1,6 +1,5 @@
 .hero {
   background-color: #c4c4c4;
-  position: relative;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -25,7 +24,7 @@
     background-image: $hero-gradient,
       url("../images/background/background-mobile@2x.jpg");
   }
-  @media (min-device-pixel-ratio: 2) and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     background-image: $hero-gradient,
       url("../images/background/background-tablet.jpg");
   }
@@ -35,7 +34,7 @@
     background-image: $hero-gradient,
       url("../images/background/background-tablet@2x.jpg");
   }
-  @media (min-device-pixel-ratio: 2) and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     background-image: $hero-gradient,
       url("../images/background/background-desktop.jpg");
   }
